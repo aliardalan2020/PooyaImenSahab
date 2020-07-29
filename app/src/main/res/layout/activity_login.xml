@@ -20,8 +20,8 @@
 
         <ImageView
             android:id="@+id/login_title"
-            android:layout_width="@dimen/h380_100"
-            android:layout_height="@dimen/h380_100"
+            android:layout_width="@dimen/h380_110"
+            android:layout_height="@dimen/h380_110"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
             android:src="@drawable/logo"
