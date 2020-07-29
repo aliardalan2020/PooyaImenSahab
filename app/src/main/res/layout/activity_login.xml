@@ -28,6 +28,8 @@
             android:layout_marginTop="@dimen/h380_100"
             />
 
+<!--        ali-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
