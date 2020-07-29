@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    tools:context=".add_guard_dir.add_guard_frag"
+    android:background="@color/white">
+
+
+
+    <!--    tools:context=".add_guard_dir.add_guard_frag"-->
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h380_57"
+        android:background="@color/colorPrimary">
+
+
+
+        <TextView
+            android:id="@+id/more_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/h380_18"
+            android:text="نگهبان ها"
+            fontPath="fonts/IRANSans(FaNum).ttf"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/back_ic"
+            android:layout_width="@dimen/h380_30"
+            android:layout_height="@dimen/h380_30"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/h380_20"
+            android:src="@drawable/arow_back_gray"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/h380_5"
+            android:elevation="@dimen/h380_50"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/pb_hottopics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_currency"
+        android:layout_width="@dimen/h380_150"
+        android:layout_height="@dimen/h380_150"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/h380_30"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h380_30"
+        android:src="@drawable/plus_white"
+        />
+</RelativeLayout>

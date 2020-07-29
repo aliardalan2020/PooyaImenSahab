@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/float_transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/h380_16"
+    app:behavior_hideable="false"
+    android:layoutDirection="ltr"
+    tools:targetApi="jelly_bean_mr1"
+    app:behavior_peekHeight="@dimen/h380_90"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/bottom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="اصلاحات را انجام داده و تایید کنید:"
+        android:layout_marginTop="@dimen/h380_12"
+        android:textSize="@dimen/h380_14"
+        android:textColor="@color/gray_d"
+        tools:ignore="SpUsage" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_title">
+
+
+        <TextView
+            android:id="@+id/name_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="نام:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <EditText
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/name_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="علی "
+            android:layout_marginTop="@dimen/h380_10"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:minWidth="100dp"
+            android:gravity="center"
+            />
+
+
+
+        <TextView
+            android:id="@+id/family_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="نام خانوادگی:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            />
+
+
+        <EditText
+            android:id="@+id/family_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/family_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="خدابنده لو"
+            android:layout_alignTop="@id/family_key"
+            android:textSize="@dimen/h380_16"
+            android:layout_marginTop="@dimen/h380_10n"
+            android:textColor="@color/gray_d"
+            android:minWidth="100dp"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/shift_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/family_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="شیفت:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <EditText
+            android:id="@+id/shift_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/shift_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="A"
+            android:layout_alignTop="@id/shift_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:layout_marginTop="@dimen/h380_10n"
+            android:minWidth="100dp"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/user_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shift_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="نام کاربری:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <EditText
+            android:id="@+id/user_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/user_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="admin123"
+            android:layout_alignTop="@id/user_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:layout_marginTop="@dimen/h380_10n"
+            android:minWidth="100dp"
+            android:gravity="center"/>
+
+
+
+        <TextView
+            android:id="@+id/pass_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/user_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="رمز عبور:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <EditText
+            android:id="@+id/pass_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/pass_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="ali123"
+            android:layout_alignTop="@id/pass_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:layout_marginTop="@dimen/h380_10n"
+            android:minWidth="100dp"
+            android:gravity="center"/>
+
+
+
+        <TextView
+            android:id="@+id/mobile_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pass_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="موبایل:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:layout_marginBottom="@dimen/h380_20"/>
+
+
+        <EditText
+            android:id="@+id/mobile_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/mobile_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="09378205384"
+            android:layout_alignTop="@id/mobile_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:layout_marginTop="@dimen/h380_10n"
+            android:minWidth="100dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h380_45"
+        android:layout_marginLeft="@dimen/h380_30"
+        android:layout_marginRight="@dimen/h380_30"
+        android:background="@drawable/ripple_effect_box_solid_blue_a_r40"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_main"
+        android:layout_marginTop="@dimen/h380_20"
+        android:text="ثبت"
+        android:textSize="@dimen/h380_14"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

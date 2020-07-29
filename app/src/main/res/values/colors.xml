@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c2834</color>
+    <color name="colorPrimaryDark">#1c2834</color>
+    <color name="colorAccent">#132E4B</color>
+
+    <color name="white">#ffffff</color>
+    <color name="status_color">#1c2834</color>
+    <color name="status_color_like">#193B53</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="dark_gray_press">#ff7e8a97</color>
+
+    <color name="backGround">#fffffd</color>
+    <color name="backgroundColor">#f6f4fa</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+
+    <color name="gray_aa">#F4F4F4</color>
+    <color name="gray_a">#e5e5e5</color>
+    <color name="gray_b">#afafaf</color>
+    <color name="gray_c">#6c6c6c</color>
+    <color name="gray_d">#4b4b4b</color>
+    <color name="gray_e">#777777</color>
+
+    <color name="green_a">#8CE100</color>
+    <color name="green_b">#77c800</color>
+
+
+    <color name="orange_a">#FFC801</color>
+
+
+    <color name="brown_a">#cd7800</color>
+    <color name="brown_b">#8C4300</color>
+
+    <color name="blue_a">#1CB0F6</color>
+    <color name="blue_c">#007CB6</color>
+    <color name="blue_b">#ebfffe</color>
+    <color name="blue_f">#2248E2</color>
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="float_transparent">#00000000</color>
+</resources>

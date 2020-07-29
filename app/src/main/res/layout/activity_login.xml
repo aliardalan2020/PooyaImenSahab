@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    tools:ignore="MissingPrefix">
+
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/h380_30"
+        android:layout_marginLeft="@dimen/h380_30"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:id="@+id/login_title"
+            android:layout_width="@dimen/h380_100"
+            android:layout_height="@dimen/h380_100"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/h380_100"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h380_20"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_title"
+            android:text="پویا ایمن سحاب"
+            android:layout_marginTop="@dimen/h380_10"/>
+
+
+
+
+        <TextView
+            android:id="@+id/email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نام کاربری"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/h380_25"
+            android:layout_below="@id/login_title"
+            android:layout_marginTop="@dimen/h380_70"
+            android:textSize="@dimen/h380_14"
+            android:textColor="@color/gray_d"
+            android:background="@drawable/box_solid_white_f_4corner"
+            android:paddingRight="@dimen/h380_10"
+            android:paddingLeft="@dimen/h380_10"
+            android:paddingTop="@dimen/h380_3"
+            android:paddingBottom="@dimen/h380_3"
+            fontPath="fonts/IRANSans(FaNum).ttf"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h380_50"
+            android:id="@+id/textInputLayout"
+            android:layout_below="@id/email_title"
+            android:layout_marginTop="@dimen/h380_5"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/h380_18"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="@dimen/h380_20"
+            android:layout_marginLeft="@dimen/h380_20"
+            android:textColor="@color/blue_a"
+            android:textColorHint="@color/blue_c"
+            android:background="@drawable/box_strock_gray_a_r15"
+            android:hint="نام کاربری"/>
+
+
+
+
+        <TextView
+            android:id="@+id/pass_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رمز "
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/h380_25"
+            android:layout_below="@id/textInputLayout"
+            android:layout_marginTop="@dimen/h380_30"
+            android:textSize="@dimen/h380_14"
+            fontPath="fonts/IRANSans(FaNum).ttf"
+            android:textColor="@color/gray_d"
+            android:background="@drawable/box_solid_white_f_4corner"
+            android:paddingRight="@dimen/h380_10"
+            android:paddingLeft="@dimen/h380_10"
+            android:paddingTop="@dimen/h380_3"
+            android:paddingBottom="@dimen/h380_3"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h380_50"
+            android:id="@+id/pass_input"
+            android:layout_below="@id/pass_title"
+            android:layout_marginTop="@dimen/h380_5"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/h380_18"
+            android:inputType="textPassword"
+            android:layout_marginRight="@dimen/h380_20"
+            android:layout_marginLeft="@dimen/h380_20"
+            android:textColor="@color/blue_a"
+            android:textColorHint="@color/blue_c"
+            android:background="@drawable/box_strock_gray_a_r15"
+            android:hint="رمز عبور"/>
+
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h380_25"
+            android:layout_marginRight="@dimen/h380_25"
+            android:layout_marginTop="@dimen/h380_30"
+            android:layout_marginBottom="@dimen/h380_20"
+            android:layout_below="@id/pass_input"
+            android:paddingBottom="@dimen/h380_5"
+            android:text="ورود"
+            android:textSize="@dimen/h380_18"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            fontPath="fonts/IRANSans(FaNum).ttf"
+            android:background="@drawable/ripple_effect_box_solid_blue_a_r40"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h380_45"
+        android:text="پویا ایمن سحاب  v 1.0"
+        android:textSize="@dimen/h380_16"
+        android:textColor="@color/backGround"
+        android:textStyle="bold"
+        fontPath="fonts/IRANSans(FaNum).ttf"
+        />
+
+
+</RelativeLayout>

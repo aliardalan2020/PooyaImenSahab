@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:background="@drawable/ripple_effect_gray_a_15"
+    android:layoutDirection="ltr"
+    tools:targetApi="jelly_bean_mr1"
+    android:layout_margin="@dimen/h380_5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="نام:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/name_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="علی "
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+
+        <TextView
+            android:id="@+id/family_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="نام خانوادگی:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/family_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/family_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="خدابنده لو"
+            android:layout_alignTop="@id/family_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/shift_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/family_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="شیفت:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/shift_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/shift_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="A"
+            android:layout_alignTop="@id/shift_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/user_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shift_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="نام کاربری:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/user_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/user_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="admin123"
+            android:layout_alignTop="@id/user_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+
+        <TextView
+            android:id="@+id/pass_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/user_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="رمز عبور:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"/>
+
+
+        <TextView
+            android:id="@+id/pass_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/pass_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="ali123"
+            android:layout_alignTop="@id/pass_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d" />
+
+
+
+        <TextView
+            android:id="@+id/mobile_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pass_key"
+            android:layout_marginRight="@dimen/h380_30"
+            android:text="موبایل:"
+            android:layout_marginTop="@dimen/h380_20"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d"
+            android:layout_marginBottom="@dimen/h380_20"/>
+
+
+        <TextView
+            android:id="@+id/mobile_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/mobile_key"
+            android:layout_marginRight="@dimen/h380_10"
+            android:text="09378205384"
+            android:layout_alignTop="@id/mobile_key"
+            android:textSize="@dimen/h380_16"
+            android:textColor="@color/gray_d" />
+
+
+
+        <TextView
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/name_key"
+            android:layout_marginLeft="@dimen/h380_20"
+            android:text="ویرایش"
+            android:textColor="@color/white"
+            android:background="@drawable/ripple_effect_box_solid_blue_a_r40"
+            android:paddingRight="@dimen/h380_10"
+            android:paddingLeft="@dimen/h380_10"
+            android:paddingTop="@dimen/h380_3"
+            android:paddingBottom="@dimen/h380_3"
+            android:textSize="@dimen/h380_16"
+            />
+
+
+
+        <TextView
+            android:id="@+id/btn_delete"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/h380_20"
+            android:text="حذف"
+            android:textColor="@color/white"
+            android:background="@drawable/ripple_effect_box_solid_blue_a_r40"
+            android:paddingRight="@dimen/h380_10"
+            android:paddingLeft="@dimen/h380_10"
+            android:paddingTop="@dimen/h380_3"
+            android:paddingBottom="@dimen/h380_3"
+            android:textSize="@dimen/h380_16"
+            android:layout_below="@id/btn_edit"
+            android:layout_marginTop="@dimen/h380_20"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
